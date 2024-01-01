@@ -1,15 +1,3 @@
-                                                                                                                                      
-88888888ba                                      ad88888ba                                                                             
-88      "8b                             ,d     d8"     "8b                                                                            
-88      ,8P                             88     Y8,                                                                                    
-88aaaaaa8P'   ,adPPYba,   8b,dPPYba,  MM88MMM  `Y8aaaaa,     ,adPPYba,  ,adPPYYba,  8b,dPPYba,   8b,dPPYba,    ,adPPYba,  8b,dPPYba,  
-88""""""'    a8"     "8a  88P'   "Y8    88       `"""""8b,  a8"     ""  ""     `Y8  88P'   `"8a  88P'   `"8a  a8P_____88  88P'   "Y8  
-88           8b       d8  88            88             `8b  8b          ,adPPPPP88  88       88  88       88  8PP"""""""  88          
-88           "8a,   ,a8"  88            88,    Y8a     a8P  "8a,   ,aa  88,    ,88  88       88  88       88  "8b,   ,aa  88          
-88            `"YbbdP"'   88            "Y888   "Y88888P"    `"Ybbd8"'  `"8bbdP"Y8  88       88  88       88   `"Ybbd8"'  88          
-                                                                                                                                      
-                                                                                                                       
-
 # Using the program
 
 ```
