@@ -1,4 +1,4 @@
-# Port Scanner
+# Port Scanner v0.0.5
 
 This is an educational usage of an IP port scanner, which can be used for ensuring a set of services are available for your servers, or for scanning a range of ports. 
 
