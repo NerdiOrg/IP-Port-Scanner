@@ -37,6 +37,8 @@ void scanAndReport(const char* ipAddress, int port) {
 }
 
 int main(int argc, char* argv[]) {
+
+    std::string distFileExtension = ".exe";
     WSADATA wsaData;
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
         std::cerr << "Winsock initialization failed." << std::endl;
@@ -44,7 +46,7 @@ int main(int argc, char* argv[]) {
     }
 
     if (argc < 2) {
-        std::cerr << "Usage: ./portscanner <IP Address> [minPort] [maxPort]" << std::endl;
+        std::cerr << "Usage: ./portscanner" << distFileExtension << " <IP Address> [minPort] [maxPort]" << std::endl;
         WSACleanup();
         return 1;
     }
@@ -62,13 +64,15 @@ int main(int argc, char* argv[]) {
         // Scan ports in the given range
         int minPort = std::stoi(argv[2]);
         int maxPort = std::stoi(argv[3]);
+        std::cout << "Scanning Ports: " << argv[2] << " - " << argv[3] << std::endl;
         for (int port = minPort; port <= maxPort; port++) {
             threads.emplace_back(scanAndReport, ipAddress, port);
         }
+        std::cout << "Port range scanning completed!" << std::endl;
     } else {
         std::cerr << "Invalid usage. Use either:\n";
-        std::cerr << "./portscanner <IP Address>\n";
-        std::cerr << "./portscanner <IP Address> <minPort> <maxPort>\n";
+        std::cerr << "./portscanner" << distFileExtension << " <IP Address>\n";
+        std::cerr << "./portscanner" << distFileExtension << " <IP Address> <minPort> <maxPort>\n";
         WSACleanup();
         return 1;
     }
